@@ -4,8 +4,8 @@ import java.util.Scanner;
 public class DeleteCardApp {
     public static void main(String[] args) {
         String connectionUrl = "jdbc:sqlserver://sqlserver.dmst.aueb.gr:1433;databaseName=DB09;encrypt=true;trustServerCertificate=true;";
-        String dbUser = "G509";
-        String dbPwd = "edg_r4547";
+        String dbUser = "";
+        String dbPwd = "";
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("=== ΔΙΑΓΡΑΦΗ ΠΙΣΤΩΤΙΚΗΣ ΚΑΡΤΑΣ ===");
