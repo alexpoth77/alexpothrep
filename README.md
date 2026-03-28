@@ -1,27 +1,30 @@
+# 💳 Banking Database Management & Analysis System
 
-# Banking Data Management System (Credit Card Analysis)
+## 📋 Project Overview
+This project involves the end-to-end design and implementation of a robust database system for "Delta Bank" to manage VISA credit card operations. It covers the entire data lifecycle: from relational schema design to extracting high-level business insights and integrating with external applications.
 
-## Project Overview
-Αυτό το project αφορά τον σχεδιασμό και την υλοποίηση ενός συστήματος διαχείρισης πιστωτικών καρτών για μια τράπεζα. Καλύπτει όλο τον κύκλο ζωής των δεδομένων: από τον σχεδιασμό του σχήματος (Schema Design) έως την εξαγωγή επιχειρηματικών συμπερασμάτων (Business Insights) μέσω SQL.
+## 🛠️ Tech Stack & Tools
+* **Database:** SQL Server (T-SQL)
+* **Languages:** SQL, Java (JDBC)
+* **Concepts:** Entity-Relationship Modeling, Triggers, Stored Procedures, Transactions.
 
-## Τεχνολογίες & Εργαλεία
-* Database:SQL Server (T-SQL)
-* Languages: SQL, Java (JDBC)
-* Concepts: Entity-Relationship Modeling, Triggers, Stored Procedures, Transactions.
+## 📊 Business Insights & SQL Analysis
+The project includes advanced T-SQL queries to solve real-world banking problems:
+1. **Database Schema:** Creation of tables for Clients, Accounts, Cards, Shops, and Transactions.
+2. **Data Analysis (SQL Queries):** * Calculation of monthly turnover and statistics per region.
+   * Trend Analysis: Identified customers who increased their total purchases by at least 50% Year-over-Year (YoY analysis).
+   * Behavioral Filtering: Isolated high-value clients with total account balances exceeding €10,000.
+3. **Automation & Safety:**
+   * **Trigger:** Automatic credit limit check before every transaction.
+   * **Stored Procedure:** Calculation of tiered commissions based on the day of the month.
+4. **Java Applications:**
+   * Application for secure card deletion using Transactions (Rollback/Commit).
+   * Application for generating monthly account statements.
 
-##  Τι περιλαμβάνει η εργασία
-1. Database Schema: Δημιουργία πινάκων για Πελάτες, Λογαριασμούς, Κάρτες, Καταστήματα και Συναλλαγές.
-2. Data Analysis (SQL Queries): Υπολογισμός μηνιαίων τζίρων και στατιστικών ανά περιοχή.
-   Εντοπισμός πελατών με μεγάλη αύξηση αγορών.
-  ιλτράρισμα πελατών βάσει σύνθετων κριτηρίων (π.χ. υπόλοιπα > 10.000€).
-3. Automation & Safety:
-   Trigger: Αυτόματος έλεγχος πιστωτικού ορίου πριν από κάθε συναλλαγή.
-  Stored Procedure:Υπολογισμός κλιμακωτών προμηθειών ανάλογα με την ημέρα του μήνα.
-4. Java Applications:
-   Εφαρμογή για ασφαλή διαγραφή κάρτας με χρήση Transactions (Rollback/Commit).
-   Εφαρμογή έκδοσης μηνιαίου Statement κινήσεων.
+## 🚀 How to Run
+1. Execute `SQLCreate2.sql` to create the database schema.
+2. Execute `SQLInserts2.sql` to import the sample/test data.
+3. Analytical queries can be found in `sqlSelects.sql`.
 
-## Πώς να το τρέξετε
-1. Εκτελέστε το `SQLCreate.sql` για τη δημιουργία της βάσης.
-2. Εκτελέστε το `SQLInserts.sql` για την εισαγωγή δεδομένων δοκιμής.
-3. Τα ερωτήματα ανάλυσης βρίσκονται στο `sqlSelects.sql`.
+
+
